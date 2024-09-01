@@ -13,7 +13,7 @@ function App() {
     contract_balance,
     sendIncrement,
     sendDeposit,
-    sendWithdrawalRequest,
+    sendWithdrawal,
   } = useMainContract();
 
   const { connected } = useTonConnect();
@@ -70,7 +70,7 @@ function App() {
               <hr />
 
               <p>Withdrawal from contract balance by 0.2 TON</p>
-              <button onClick={sendWithdrawalRequest}>Withdrawal</button>
+              <button onClick={sendWithdrawal}>Withdrawal</button>
               <hr />
             </>
           ) : (

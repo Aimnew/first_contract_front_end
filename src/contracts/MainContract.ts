@@ -93,7 +93,7 @@ export class MainContract implements Contract {
     });
   }
 
-  async sendWithdrawalRequest(
+  async sendWithdrawal(
     provider: ContractProvider,
     sender: Sender,
     value: bigint,

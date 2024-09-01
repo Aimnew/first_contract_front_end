@@ -42,7 +42,7 @@ export function useMainContract() {
         recent_sender: contractData.recent_sender,
         owner_address: contractData.owner_address,
       });
-      setBalance(contractBalance);
+      setBalance(contractBalance.number);
     }
 
     getValue();
